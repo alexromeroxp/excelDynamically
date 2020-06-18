@@ -6,6 +6,6 @@ var excelController = require("../controllers/excelController");
 
 
 
-router.post("/posts", upload.single("xlsxFile"), excelController.insertExcelFile);
+router.post("/post", upload.single("file"), excelController.insertExcelFile);
 
 module.exports = router;
